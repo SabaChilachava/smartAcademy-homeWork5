@@ -8,5 +8,6 @@ images.forEach((img) => {
         mainimg.src = img.src;
         img.src = tmp;
         console.log(img.src);
+        TransitionEvent
     });
 });

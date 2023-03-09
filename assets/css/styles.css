@@ -12,28 +12,54 @@ header {
 }
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 1475px;
     height: 91px;
     padding-top: 40px;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ul {
     display: flex;
-}
-ul li {
     list-style-type: none;
+    gap: 25px;
 }
-li a {
+.menubar {
     text-decoration: none;
-    border-radius: 28px;
-    padding: 18px 40px;
     font-size: 16px;
     color: #ffffff;
     font-family: "HelveticaNeueBold";
 }
+.menubar::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 10px;
+    transition: all .5s;
+}
+.menubar:hover::after{
+    width: 70%;
+}
 .contact-button {
     background-color: #ffffff;
     color: #171717;
+    border-radius: 28px;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "HelveticaNeueBold";
+    transition: all .5s;
+}
+.contact-button:hover{
+    background: #171717;
+    color: #ffffff;
+    
 }
 main {
     display: flex;
